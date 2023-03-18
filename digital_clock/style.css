@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex; /*to bring everything center horizontally*/
+  flex-direction: column; /*everything went next to each other so column to bring in column*/
+  align-items: center; /*to bring them center horizontally*/
+  height: 100vh; /*viewport% length based on browser default viewport size */
+  justify-content: center; /*to bring everything to center vertically*/
+  background: url("https://images.unsplash.com/photo-1600699260716-d5ed9a3f9efe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2068&q=80");
+  background-size: cover;
+  overflow: hidden; /*when u decrease window size the scroll bars wont be there */
+}
+
+h2 {
+  text-transform: uppercase; /*to capitalize letters*/
+  letter-spacing: 4px; /*for spacing between letters*/
+  font-size: 14px;
+  text-align: center; /*its already in center but if we change screensize of browser it should stay in center*/
+  color: white;
+}
+.clock {
+  display: flex;
+}
+.clock div {
+  margin: 5px;
+  position: relative;
+}
+
+.clock span {
+  width: 100px;
+  height: 80px;
+  background-color: slateblue;
+  opacity: 80%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.clock .text {
+  height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: darkblue;
+  opacity: 0.8;
+}
+
+.clock #ampm {
+  bottom: 0;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+  background-color: green;
+}
