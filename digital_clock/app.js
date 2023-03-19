@@ -8,7 +8,7 @@ const ampmElement = document.querySelector("#ampm");
 //now we have all elements now we can change them dynamically
 // create a function to get data from computer
 
-function updateClock(params) {
+function updateClock() {
   let hours = new Date().getHours(); // get hours from pc
   let minutes = new Date().getMinutes(); // get minutes from pc
   let seconds = new Date().getSeconds(); // get seconds from pc
