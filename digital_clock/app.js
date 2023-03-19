@@ -6,7 +6,7 @@ const secondElement = document.querySelector("#seconds");
 const ampmElement = document.querySelector("#ampm");
 
 //now we have all elements now we can change them dynamically
-// create a function to get data from computer
+// create a function to get data from computer.
 
 function updateClock() {
   let hours = new Date().getHours(); // get hours from pc
